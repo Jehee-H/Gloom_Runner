@@ -1417,6 +1417,11 @@ PrefabInstance:
       propertyPath: jumpForce
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 3658401992042134654, guid: 23a4d49030b0af5429fab189cbefe5d8,
+        type: 3}
+      propertyPath: dashingVelocity
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 3658401993781178396, guid: 23a4d49030b0af5429fab189cbefe5d8,
         type: 3}
       propertyPath: m_Enabled
@@ -1482,6 +1487,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3717624096901078303, guid: 23a4d49030b0af5429fab189cbefe5d8,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: b9f41acd66d869d40bd8b871518d0bb8, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23a4d49030b0af5429fab189cbefe5d8, type: 3}
 --- !u!1 &1082779265
