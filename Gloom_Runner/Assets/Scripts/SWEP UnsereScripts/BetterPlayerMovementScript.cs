@@ -15,9 +15,6 @@ public class BetterPlayerMovementScript : MonoBehaviour
     public float checkRadius;
     public LayerMask whatIsGround;
 
-    private float jumpTimeCounter;
-    public float jumpTime;
-    private bool isJumping;
     private SpriteRenderer mySR;
     // Start is called before the first frame update
 
@@ -26,9 +23,11 @@ public class BetterPlayerMovementScript : MonoBehaviour
     private bool isDashing;
     private bool canDash;
     private Vector2 dashingDir;
-    [SerializeField] private float dashingVelocity = 14f;
+    [SerializeField] private float dashingVelocity = 10f;
     [SerializeField] private float dashingTime = 0.5f;
- 
+    [SerializeField] private float yVelJumpReleaseMod = 2f;
+
+
     public TrailRenderer tr;
 
 
@@ -40,10 +39,6 @@ public class BetterPlayerMovementScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-        inputX = Input.GetAxisRaw("Horizontal");
-        Debug.Log(inputX);
-        rb.velocity = new Vector2(inputX * speed, rb.velocity.y);
-
 
         if (isDashing)
         {
@@ -54,34 +49,24 @@ public class BetterPlayerMovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //been walking since day one i was born while eating corn cornered by aliens 
+        inputX = Input.GetAxisRaw("Horizontal");
+        rb.velocity = new Vector2(inputX * speed, rb.velocity.y);
+
+
+        // Jumping
         isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
 
         if(isGrounded == true && Input.GetKeyDown(KeyCode.Space))
         {
-            isJumping = true;
-            jumpTimeCounter = jumpTime;
-            rb.velocity = Vector2.up * jumpForce;
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
 
-        if (Input.GetKey(KeyCode.Space) && isJumping == true)
+        if (Input.GetKeyUp(KeyCode.Space) && rb.velocity.y > 0)
         {
-
-            if(jumpTimeCounter > 0)
-            {
-                rb.velocity = Vector2.up * jumpForce / 1.5f;
-                jumpTimeCounter -= Time.deltaTime;
-            }
-            else
-            {
-                isJumping = false;
-            }
-
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y / yVelJumpReleaseMod);
         }
 
-        if (Input.GetKeyUp(KeyCode.Space))
-        {
-            isJumping = false;
-        }
         
         // Switch Sprite
         switchSprite();
@@ -93,6 +78,7 @@ public class BetterPlayerMovementScript : MonoBehaviour
             canDash = false;
             tr.emitting = true;
             dashingDir = new Vector2(inputX, Input.GetAxisRaw("Vertical"));
+            Debug.Log(dashingDir);
             if(dashingDir == Vector2.zero)
             {
                 dashingDir = new Vector2(transform.localScale.x, 0);
@@ -102,7 +88,17 @@ public class BetterPlayerMovementScript : MonoBehaviour
 
         if (isDashing)
         {
-            rb.velocity = dashingDir.normalized * dashingVelocity;
+            if (dashingDir == new Vector2(0, 1))
+            {
+                rb.velocity = dashingDir.normalized * (dashingVelocity - 2);
+                Debug.Log("work?");
+            }
+
+            else
+            {
+                rb.velocity = dashingDir.normalized * dashingVelocity;
+            }
+
             return;
         }
 
