@@ -20,6 +20,10 @@ public class BetterPlayerMovementScript : MonoBehaviour
     private SpriteRenderer mySR;
     // Start is called before the first frame update
 
+    //Audio
+    public AudioSource source;
+    public AudioClip clip;
+
     //Dash thing
     [Header ("Dashing")]
     private bool isDashing;
@@ -78,6 +82,7 @@ public class BetterPlayerMovementScript : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.LeftShift) && canDash)
         {
             isDashing = true;
+            source.PlayOneShot(clip);
             canDash = false;
             tr.emitting = true;
             dashingDir = new Vector2(inputX, Input.GetAxisRaw("Vertical"));
