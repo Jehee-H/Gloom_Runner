@@ -15,13 +15,15 @@ public class BetterPlayerMovementScript : MonoBehaviour
     public float checkRadius;
     public LayerMask whatIsGround;
 
+    private Animator _areYouOKAni;
+
     private SpriteRenderer mySR;
     // Start is called before the first frame update
 
     //Dash thing
     [Header ("Dashing")]
     private bool isDashing;
-    private bool canDash;
+    private bool canDash = true;
     private Vector2 dashingDir;
     [SerializeField] private float dashingVelocity = 10f;
     [SerializeField] private float dashingTime = 0.5f;
@@ -35,6 +37,7 @@ public class BetterPlayerMovementScript : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         mySR = GetComponent<SpriteRenderer>();
+        _areYouOKAni = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -86,6 +89,8 @@ public class BetterPlayerMovementScript : MonoBehaviour
             StartCoroutine(stopDashing());
         }
 
+        _areYouOKAni.SetBool("isDashing", isDashing);
+
         if (isDashing)
         {
             if (dashingDir == new Vector2(0, 1))
@@ -113,6 +118,7 @@ public class BetterPlayerMovementScript : MonoBehaviour
         yield return new WaitForSeconds(dashingTime);
         tr.emitting = false;
         isDashing = false;
+ 
     }
 
 
@@ -127,6 +133,17 @@ public class BetterPlayerMovementScript : MonoBehaviour
         {
             mySR.flipX = false;
         }
+
+        if (inputX == -1 && isDashing == true)
+        {
+            mySR.flipX = true;
+        }
+
+        if (inputX == 1 && isDashing == true)
+        {
+            mySR.flipX = false;
+        }
+
 
     }
 
