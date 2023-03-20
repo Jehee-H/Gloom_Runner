@@ -54,15 +54,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  jumpForce: 5
+  jumpForce: 10
   feetPos: {fileID: 3658401992251576315}
   checkRadius: 0.3
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
-  jumpTime: 0.3
-  dashingVelocity: 14
+  lastDirPressed: 0
+  source: {fileID: 4962283137835823873}
+  clip: {fileID: 8300000, guid: b6d0c66e441be024cbeb4ebc550b1b0f, type: 3}
+  dashingVelocity: 10
   dashingTime: 0.2
+  yVelJumpReleaseMod: 2
   tr: {fileID: -4569437789899625694}
 --- !u!212 &3473443101865505903
 SpriteRenderer:
@@ -124,9 +127,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3657217531393788839}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b09e60546065cf9448b36ebb7f759a91, type: 2}
+  m_Controller: {fileID: 9100000, guid: b9f41acd66d869d40bd8b871518d0bb8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -143,7 +146,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3657217531393788839}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -283,7 +286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8534e17a0f90604c9afd4f5c73d829f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Id: 9dc473ac-6963-465b-af82-b6a708106034
+  m_Id: eb6fd15a-24ac-4541-8978-f908aa90a233
 --- !u!50 &3658401992042134655
 Rigidbody2D:
   serializedVersion: 4
@@ -326,7 +329,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7284664b1aa4f45f0a118f80f5ec1349, type: 2}
+  - {fileID: 2100000, guid: e0495ba00e56c48c0a9c32dbd73521f7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
