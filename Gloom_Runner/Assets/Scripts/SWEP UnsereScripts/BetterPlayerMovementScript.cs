@@ -14,6 +14,7 @@ public class BetterPlayerMovementScript : MonoBehaviour
     public Transform feetPos;
     public float checkRadius;
     public LayerMask whatIsGround;
+    public int lastDirPressed;
 
     private Animator _areYouOKAni;
 
@@ -89,7 +90,14 @@ public class BetterPlayerMovementScript : MonoBehaviour
             Debug.Log(dashingDir);
             if(dashingDir == Vector2.zero)
             {
-                dashingDir = new Vector2(transform.localScale.x, 0);
+                if (lastDirPressed == 1)
+                {
+                    dashingDir = new Vector2(transform.localScale.x, 0);
+                }
+                else
+                {
+                    dashingDir = new Vector2(-transform.localScale.x, 0);
+                }                                           
             }
             StartCoroutine(stopDashing());
         }
@@ -123,7 +131,6 @@ public class BetterPlayerMovementScript : MonoBehaviour
         yield return new WaitForSeconds(dashingTime);
         tr.emitting = false;
         isDashing = false;
- 
     }
 
 
@@ -132,24 +139,26 @@ public class BetterPlayerMovementScript : MonoBehaviour
         if (inputX == -1 && isGrounded == true)
         {
             mySR.flipX = true;
+            lastDirPressed = -1;
         }
 
         if (inputX == 1 && isGrounded == true)
         {
             mySR.flipX = false;
+            lastDirPressed = 1;
         }
 
         if (inputX == -1 && isDashing == true)
         {
             mySR.flipX = true;
+            lastDirPressed = -1;
         }
 
         if (inputX == 1 && isDashing == true)
         {
             mySR.flipX = false;
+            lastDirPressed = 1;
         }
-
-
     }
 
 }
