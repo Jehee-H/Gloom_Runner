@@ -5,6 +5,8 @@ using UnityEngine;
 public class BetterPlayerMovementScript : MonoBehaviour
 {
 
+    public charInfo charInfo;
+
     private Rigidbody2D rb;
     public float speed;
     public float jumpForce;
@@ -59,7 +61,7 @@ public class BetterPlayerMovementScript : MonoBehaviour
     {
         //been walking since day one i was born while eating corn cornered by aliens 
         inputX = Input.GetAxisRaw("Horizontal");
-        rb.velocity = new Vector2(inputX * speed, rb.velocity.y);
+        rb.velocity = new Vector2(inputX * charInfo.speedValue, rb.velocity.y);
 
 
         // Jumping
@@ -67,15 +69,14 @@ public class BetterPlayerMovementScript : MonoBehaviour
 
         if(isGrounded == true && Input.GetKeyDown(KeyCode.Space))
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            rb.velocity = new Vector2(rb.velocity.x, charInfo.jumpValue);
         }
 
         if (Input.GetKeyUp(KeyCode.Space) && rb.velocity.y > 0)
         {
-            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y / yVelJumpReleaseMod);
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y / charInfo.yDashingVelocity);
         }
 
-        
         // Switch Sprite
         switchSprite();
 
@@ -102,21 +103,20 @@ public class BetterPlayerMovementScript : MonoBehaviour
             StartCoroutine(stopDashing());
         }
 
-        _areYouOKAni.SetBool("isDashing", isDashing);
+        //_areYouOKAni.SetBool("isDashing", isDashing);
 
         if (isDashing)
         {
             if (dashingDir == new Vector2(0, 1))
             {
-                rb.velocity = dashingDir.normalized * (dashingVelocity - 2);
+                rb.velocity = dashingDir.normalized * (charInfo.dashingVelocity - charInfo.optimizeYVelocity);
                 Debug.Log("work?");
             }
 
             else
             {
-                rb.velocity = dashingDir.normalized * dashingVelocity;
+                rb.velocity = dashingDir.normalized * charInfo.dashingVelocity;
             }
-
             return;
         }
 
@@ -128,7 +128,7 @@ public class BetterPlayerMovementScript : MonoBehaviour
 
     private IEnumerator stopDashing()
     {
-        yield return new WaitForSeconds(dashingTime);
+        yield return new WaitForSeconds(charInfo.dashingTime);
         tr.emitting = false;
         isDashing = false;
     }
