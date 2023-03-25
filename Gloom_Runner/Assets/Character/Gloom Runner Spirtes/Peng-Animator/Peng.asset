@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35cfca3023d162a4fa7be302ae93d55b, type: 3}
+  m_Name: Peng
+  m_EditorClassIdentifier: 
+  name: Peng
+  description: Long
+  speedValue: 5
+  jumpValue: 15
+  dashingVelocity: 8
+  dashingTime: 0.15
+  yDashingVelocity: 2
+  optimizeYVelocity: 2
