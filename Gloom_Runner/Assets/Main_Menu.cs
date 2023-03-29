@@ -5,19 +5,28 @@ using UnityEngine.SceneManagement;
 
 public class Main_Menu : MonoBehaviour {
 
+    public GameObject continueButton;
+
+    void Start()
+    {
+        if (!PlayerPrefs.HasKey("_progress_")) {
+            continueButton.gameObject.SetActive(false);
+        }
+    }
+
     public void Continue()
     {
-        SceneManager.LoadScene(PlayerPrefs.GetString("_last_scene_"));
+        
     }
     
     public void Load(int level)
     {
-        SceneManager.LoadScene(level);
+        PlayerPrefs.SetString("_progress_", level.ToString());
     }
 
     public void NewGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        PlayerPrefs.SetString("_progress_", "1");
     }
 
     public void Quit()
