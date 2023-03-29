@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Peng
   m_EditorClassIdentifier: 
   name: Peng
+  id: 1
   description: Long
   speedValue: 5
   jumpValue: 15

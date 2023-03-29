@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using Platformer.Mechanics;
 using Platformer.UI;
 using UnityEngine;
+using Cinemachine;
+
 
 namespace Platformer.UI
 {
@@ -18,12 +20,36 @@ namespace Platformer.UI
         /// </summary>
         public MainUIController mainMenu;
 
+        [SerializeField] GameObject Nul;
+        [SerializeField] GameObject Peng;
+        [SerializeField] GameObject Mas;
+        public CinemachineVirtualCamera vcam;
+
         /// <summary>
         /// The main UI object which used for the Main Menu.
         /// </summary>
         public MainUIController victoryMenu;
 
         public float test;
+
+        private void Awake()
+        {
+            if (PlayerPrefs.GetInt("_character_") == 0){
+                Nul.gameObject.SetActive(true);
+                vcam.Follow = Nul.transform;
+
+            }
+            if (PlayerPrefs.GetInt("_character_") == 1)
+            {
+                Peng.gameObject.SetActive(true);
+                vcam.Follow = Peng.transform;
+            }
+            if (PlayerPrefs.GetInt("_character_") == 2)
+            {
+                Mas.gameObject.SetActive(true);
+                vcam.Follow = Mas.transform;
+            }
+        }
 
         /// <summary>
         /// A list of canvas objects which are used during gameplay (when the main ui is turned off)

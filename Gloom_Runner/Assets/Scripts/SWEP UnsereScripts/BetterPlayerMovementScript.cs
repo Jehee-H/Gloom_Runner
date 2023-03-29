@@ -70,6 +70,7 @@ public class BetterPlayerMovementScript : MonoBehaviour
         if(isGrounded == true && Input.GetKeyDown(KeyCode.Space))
         {
             rb.velocity = new Vector2(rb.velocity.x, charInfo.jumpValue);
+            Debug.Log(PlayerPrefs.GetInt("_character_"));
         }
 
         if (Input.GetKeyUp(KeyCode.Space) && rb.velocity.y > 0)

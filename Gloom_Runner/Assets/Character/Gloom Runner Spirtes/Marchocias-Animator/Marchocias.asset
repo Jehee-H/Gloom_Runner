@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Marchocias
   m_EditorClassIdentifier: 
   name: Marchocias
+  id: 2
   description: Big
   speedValue: 3
   jumpValue: 8

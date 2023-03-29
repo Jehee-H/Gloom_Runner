@@ -6,6 +6,7 @@ using UnityEngine;
 public class charInfo : ScriptableObject
 {
     public new string name;
+    public int id;
     public string description;
 
     public float speedValue;

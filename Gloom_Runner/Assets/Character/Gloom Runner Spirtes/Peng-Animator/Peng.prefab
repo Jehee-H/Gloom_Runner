@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 3658401993781178396}
   - component: {fileID: 3658401992042134655}
   - component: {fileID: -4569437789899625694}
+  - component: {fileID: -7696064216110410848}
   m_Layer: 0
   m_Name: Peng
   m_TagString: Player
@@ -150,7 +151,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: bf527d825758e5b4ca7b69f5a02d9a56, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b6d0c66e441be024cbeb4ebc550b1b0f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -417,6 +418,18 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 0
+--- !u!114 &-7696064216110410848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3657217531393788839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaea7437e0e958a4d8e9ed990a1752c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3658401992251576314
 GameObject:
   m_ObjectHideFlags: 0
