@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using Platformer.Mechanics;
 using Platformer.UI;
 using UnityEngine;
@@ -8,12 +10,20 @@ namespace Platformer.UI
     /// The MetaGameController is responsible for switching control between the high level
     /// contexts of the application, eg the Main Menu and Gameplay systems.
     /// </summary>
+    [System.Serializable]
     public class MetaGameController : MonoBehaviour
     {
         /// <summary>
-        /// The main UI object which used for the menu.
+        /// The main UI object which used for the Pause Menu.
         /// </summary>
         public MainUIController mainMenu;
+
+        /// <summary>
+        /// The main UI object which used for the Main Menu.
+        /// </summary>
+        public MainUIController victoryMenu;
+
+        public float test;
 
         /// <summary>
         /// A list of canvas objects which are used during gameplay (when the main ui is turned off)
@@ -26,6 +36,7 @@ namespace Platformer.UI
         public GameController gameController;
 
         bool showMainCanvas = false;
+        bool showVictoryCanvas = false;
 
         void OnEnable()
         {
@@ -38,7 +49,7 @@ namespace Platformer.UI
         /// <param name="show"></param>
         public void ToggleMainMenu(bool show)
         {
-            if (this.showMainCanvas != show)
+            if (this.showMainCanvas != show && this.showVictoryCanvas == false)
             {
                 _ToggleMainMenu(show);
             }
@@ -59,6 +70,31 @@ namespace Platformer.UI
                 ///foreach (var i in gamePlayCanvasii) i.gameObject.SetActive(true);
             }
             this.showMainCanvas = show;
+        }
+
+        public void ToggleVictoryMenu(bool show)
+        {
+            if (this.showVictoryCanvas != show)
+            {
+                _ToggleVictoryMenu(show);
+            }
+        }
+
+        void _ToggleVictoryMenu(bool show)
+        {
+            if (show)
+            {
+                Time.timeScale = 0;
+                victoryMenu.gameObject.SetActive(true);
+                ///foreach (var i in gamePlayCanvasii) i.gameObject.SetActive(false);
+            }
+            else
+            {
+                Time.timeScale = 1;
+                victoryMenu.gameObject.SetActive(false);
+                ///foreach (var i in gamePlayCanvasii) i.gameObject.SetActive(true);
+            }
+            this.showVictoryCanvas = show;
         }
 
         void Update()
