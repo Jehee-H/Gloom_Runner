@@ -356,6 +356,8 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 2202520165731210269, guid: d9dce77ae7fe9134693ec228aff9ecb4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d9dce77ae7fe9134693ec228aff9ecb4, type: 3}
+<<<<<<< HEAD
+=======
 --- !u!1 &212159228
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,6 +494,7 @@ RectTransform:
   m_AnchoredPosition: {x: 330.00003, y: 197.52998}
   m_SizeDelta: {x: 104.9745, y: 23.328}
   m_Pivot: {x: 0.5, y: 0.5}
+>>>>>>> dominik-branch
 --- !u!1 &226548474
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,6 +579,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
+=======
 --- !u!1 &242709671
 GameObject:
   m_ObjectHideFlags: 0
@@ -712,6 +717,7 @@ RectTransform:
   m_AnchoredPosition: {x: -330.07614, y: 197.52676}
   m_SizeDelta: {x: 104.9745, y: 23.3277}
   m_Pivot: {x: 0.5, y: 0.5}
+>>>>>>> dominik-branch
 --- !u!1001 &318776226
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1208,6 +1214,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a1bd12ebb35d4dc997aa0c5494eda9b, type: 3}
+<<<<<<< HEAD
+=======
 --- !u!1 &500566886
 GameObject:
   m_ObjectHideFlags: 0
@@ -1341,6 +1349,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+>>>>>>> dominik-branch
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1355,7 +1364,10 @@ GameObject:
   - component: {fileID: 519420030}
   - component: {fileID: 519420034}
   - component: {fileID: 519420033}
+<<<<<<< HEAD
+=======
   - component: {fileID: 519420035}
+>>>>>>> dominik-branch
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1513,6 +1525,8 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+<<<<<<< HEAD
+=======
 --- !u!114 &519420035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1525,12 +1539,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b755a4e8532f354ab84cab2a5fa3370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+>>>>>>> dominik-branch
 --- !u!4 &580342553 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3662920167464432193, guid: 60ac118b0e444a243a9f27b59538a069,
     type: 3}
   m_PrefabInstance: {fileID: 1317477917}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
+=======
 --- !u!1 &740774018
 GameObject:
   m_ObjectHideFlags: 0
@@ -1667,6 +1684,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 740774018}
   m_CullTransparentMesh: 1
+>>>>>>> dominik-branch
 --- !u!114 &838423048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1953,6 +1971,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60ac118b0e444a243a9f27b59538a069, type: 3}
+<<<<<<< HEAD
+=======
 --- !u!1 &1317477918 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3657217531393788839, guid: 60ac118b0e444a243a9f27b59538a069,
@@ -1971,6 +1991,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b755a4e8532f354ab84cab2a5fa3370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+>>>>>>> dominik-branch
 --- !u!1 &1407009904
 GameObject:
   m_ObjectHideFlags: 3
@@ -2690,6 +2711,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainMenu: {fileID: 2110646551}
+<<<<<<< HEAD
+  gamePlayCanvasii: []
+=======
+>>>>>>> dominik-branch
   gameController: {fileID: 1754240607}
 --- !u!82 &1754240611
 AudioSource:
@@ -2700,8 +2725,12 @@ AudioSource:
   m_GameObject: {fileID: 1754240606}
   m_Enabled: 1
   serializedVersion: 4
+<<<<<<< HEAD
+  OutputAudioMixerGroup: {fileID: 0}
+=======
   OutputAudioMixerGroup: {fileID: 24300002, guid: fd42cdc1b09541b46b3d270f232d220a,
     type: 2}
+>>>>>>> dominik-branch
   m_audioClip: {fileID: 8300000, guid: 5833894e2899f1840ac04193ca462e39, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.334

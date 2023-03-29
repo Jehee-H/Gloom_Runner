@@ -568,7 +568,10 @@ RectTransform:
   - {fileID: 1910084557}
   - {fileID: 1680438758}
   - {fileID: 525584124}
+<<<<<<< HEAD
+=======
   - {fileID: 2100844142}
+>>>>>>> dominik-branch
   - {fileID: 436066118}
   m_Father: {fileID: 1733231867}
   m_RootOrder: 3
@@ -1905,11 +1908,19 @@ RectTransform:
   m_Children:
   - {fileID: 1787626838}
   m_Father: {fileID: 113403681}
+<<<<<<< HEAD
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 50, y: 65}
+=======
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 50, y: 35}
+>>>>>>> dominik-branch
   m_SizeDelta: {x: 70, y: 30}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &436066119
@@ -2191,7 +2202,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
+<<<<<<< HEAD
+  m_AnchoredPosition: {x: 200, y: 115}
+=======
   m_AnchoredPosition: {x: 200, y: 150}
+>>>>>>> dominik-branch
   m_SizeDelta: {x: 90, y: 30}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &525584125
@@ -2288,6 +2303,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 525584123}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
+=======
 --- !u!1 &549710568
 GameObject:
   m_ObjectHideFlags: 0
@@ -2424,6 +2441,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 549710568}
   m_CullTransparentMesh: 1
+>>>>>>> dominik-branch
 --- !u!1 &624210043
 GameObject:
   m_ObjectHideFlags: 0
@@ -5060,7 +5078,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
+<<<<<<< HEAD
+  m_AnchoredPosition: {x: 200, y: 150}
+=======
   m_AnchoredPosition: {x: 200, y: 185}
+>>>>>>> dominik-branch
   m_SizeDelta: {x: 90, y: 30}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1680438759
@@ -5277,7 +5299,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: fd42cdc1b09541b46b3d270f232d220a, type: 2}
   resolutionDropdown: {fileID: 1810840191}
+<<<<<<< HEAD
+=======
   isFullScreen: 1
+>>>>>>> dominik-branch
 --- !u!1 &1751294853
 GameObject:
   m_ObjectHideFlags: 0
@@ -6972,7 +6997,11 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
+<<<<<<< HEAD
+  m_AnchoredPosition: {x: 100, y: 185}
+=======
   m_AnchoredPosition: {x: -53, y: 80}
+>>>>>>> dominik-branch
   m_SizeDelta: {x: 90, y: 30}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1910084558
@@ -8144,6 +8173,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2048117280}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
+=======
 --- !u!1 &2100844141
 GameObject:
   m_ObjectHideFlags: 0
@@ -8278,6 +8309,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2100844141}
   m_CullTransparentMesh: 1
+>>>>>>> dominik-branch
 --- !u!1 &2106681016
 GameObject:
   m_ObjectHideFlags: 0
