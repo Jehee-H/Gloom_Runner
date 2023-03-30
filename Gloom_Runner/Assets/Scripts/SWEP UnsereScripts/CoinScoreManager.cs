@@ -8,7 +8,7 @@ public class CoinScoreManager : MonoBehaviour
 {
     public TMP_Text textCoinScore;
     public float coinScore;
-    int[] coinTotals = { 0, 3, 3, 1, 1, 1, 1, 1 };
+    int[] coinTotals = { 0, 3, 3, 3, 3, 3, 3, 3 };
 
     public GameObject gameController;
     Platformer.UI.MetaGameController metaGameController;

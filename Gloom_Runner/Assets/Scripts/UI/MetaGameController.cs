@@ -160,7 +160,7 @@ namespace Platformer.UI
             }
         }
 
-        void destroyMusicBox()
+        public void destroyMusicBox()
         {
             Destroy(musicGameobject);
         }
