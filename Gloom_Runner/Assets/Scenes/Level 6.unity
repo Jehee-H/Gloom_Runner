@@ -492,6 +492,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Peng
       objectReference: {fileID: 0}
+    - target: {fileID: 3657217531393788839, guid: 240d3c649d2847d4b83bea1f220b9587,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3658401993781178396, guid: 240d3c649d2847d4b83bea1f220b9587,
         type: 3}
       propertyPath: m_Id
@@ -2728,6 +2733,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Marchocias
       objectReference: {fileID: 0}
+    - target: {fileID: 3657217531393788839, guid: 60ac118b0e444a243a9f27b59538a069,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3658401993781178396, guid: 60ac118b0e444a243a9f27b59538a069,
         type: 3}
       propertyPath: m_Enabled
@@ -3780,6 +3790,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Nul
+      objectReference: {fileID: 0}
+    - target: {fileID: 3657217531393788839, guid: 23a4d49030b0af5429fab189cbefe5d8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3662920167464432193, guid: 23a4d49030b0af5429fab189cbefe5d8,
         type: 3}

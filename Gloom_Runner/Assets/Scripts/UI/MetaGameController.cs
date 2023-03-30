@@ -29,15 +29,16 @@ namespace Platformer.UI
         /// The main UI object which used for the Main Menu.
         /// </summary>
         public MainUIController victoryMenu;
+        public MainUIController defeatMenu;
 
         public float test;
 
         private void Awake()
         {
-            if (PlayerPrefs.GetInt("_character_") == 0){
+            if (PlayerPrefs.GetInt("_character_") == 0)
+            {
                 Nul.gameObject.SetActive(true);
                 vcam.Follow = Nul.transform;
-
             }
             if (PlayerPrefs.GetInt("_character_") == 1)
             {
@@ -63,6 +64,7 @@ namespace Platformer.UI
 
         bool showMainCanvas = false;
         bool showVictoryCanvas = false;
+        bool showDefeatCanvas = false;
 
         void OnEnable()
         {
@@ -106,6 +108,14 @@ namespace Platformer.UI
             }
         }
 
+        public void ToggleDefeatMenu(bool show)
+        {
+            if (this.showDefeatCanvas != show)
+            {
+                _ToggleDefeatMenu(show);
+            }
+        }
+
         void _ToggleVictoryMenu(bool show)
         {
             if (show)
@@ -121,6 +131,23 @@ namespace Platformer.UI
                 ///foreach (var i in gamePlayCanvasii) i.gameObject.SetActive(true);
             }
             this.showVictoryCanvas = show;
+        }
+
+        void _ToggleDefeatMenu(bool show)
+        {
+            if (show)
+            {
+                Time.timeScale = 0;
+                defeatMenu.gameObject.SetActive(true);
+                ///foreach (var i in gamePlayCanvasii) i.gameObject.SetActive(false);
+            }
+            else
+            {
+                Time.timeScale = 1;
+                defeatMenu.gameObject.SetActive(false);
+                ///foreach (var i in gamePlayCanvasii) i.gameObject.SetActive(true);
+            }
+            this.showDefeatCanvas = show;
         }
 
         void Update()
