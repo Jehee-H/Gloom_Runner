@@ -66,6 +66,8 @@ namespace Platformer.UI
         bool showVictoryCanvas = false;
         bool showDefeatCanvas = false;
 
+        public GameObject musicGameobject;
+
         void OnEnable()
         {
             _ToggleMainMenu(showMainCanvas);
@@ -156,6 +158,11 @@ namespace Platformer.UI
             {
                 ToggleMainMenu(show: !showMainCanvas);
             }
+        }
+
+        void destroyMusicBox()
+        {
+            Destroy(musicGameobject);
         }
 
     }
