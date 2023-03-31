@@ -25,6 +25,7 @@ public class BetterPlayerMovementScript : MonoBehaviour
 
     //Audio
     public AudioSource source;
+    public AudioClip JumpSound;
     public AudioClip clip;
 
     //Dash thing
@@ -69,6 +70,7 @@ public class BetterPlayerMovementScript : MonoBehaviour
 
         if(isGrounded == true && Input.GetKeyDown(KeyCode.Space))
         {
+            source.PlayOneShot(JumpSound);
             rb.velocity = new Vector2(rb.velocity.x, charInfo.jumpValue);
             Debug.Log(PlayerPrefs.GetInt("_character_"));
         }
@@ -82,7 +84,7 @@ public class BetterPlayerMovementScript : MonoBehaviour
         switchSprite();
 
         //Dash
-        if(Input.GetKeyDown(KeyCode.LeftShift) && canDash)
+        if(Input.GetKeyDown(KeyCode.LeftShift) && canDash || canDash && Input.GetKeyDown(KeyCode.O))
         {
             isDashing = true;
             source.PlayOneShot(clip);
