@@ -17,7 +17,7 @@ MonoBehaviour:
   description: Big
   speedValue: 4
   jumpValue: 0
-  dashingVelocity: 14
+  dashingVelocity: 16
   dashingTime: 0.13
   yDashingVelocity: 0
   optimizeYVelocity: 2
