@@ -65,6 +65,7 @@ MonoBehaviour:
     m_Bits: 64
   lastDirPressed: 0
   source: {fileID: 4962283137835823873}
+  JumpSound: {fileID: 8300000, guid: 2a51d0e6135d2d54781e8dbbf902fa04, type: 3}
   clip: {fileID: 8300000, guid: b6d0c66e441be024cbeb4ebc550b1b0f, type: 3}
   dashingVelocity: 10
   dashingTime: 0.2
@@ -431,6 +432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaea7437e0e958a4d8e9ed990a1752c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ring: {fileID: 8300000, guid: 0e60a35e76c4e3a45a827e5d7702a929, type: 3}
 --- !u!114 &-7454253661603216543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -443,6 +445,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a4cf0fabeeb4564ca7e79bdb4da8f59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameController: {fileID: 0}
+  deadSound: {fileID: 8300000, guid: 8ff5e2d9075df21479ec0bfee129ddf4, type: 3}
 --- !u!1 &3658401992251576314
 GameObject:
   m_ObjectHideFlags: 0
