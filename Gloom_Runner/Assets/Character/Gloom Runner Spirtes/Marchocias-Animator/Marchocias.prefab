@@ -65,7 +65,7 @@ MonoBehaviour:
     m_Bits: 64
   lastDirPressed: 0
   source: {fileID: 7738721634227194259}
-  JumpSound: {fileID: 8300000, guid: 2a51d0e6135d2d54781e8dbbf902fa04, type: 3}
+  JumpSound: {fileID: 8300000, guid: 9a95604c5982ae341a7619591a610376, type: 3}
   clip: {fileID: 8300000, guid: b6d0c66e441be024cbeb4ebc550b1b0f, type: 3}
   dashingVelocity: 10
   dashingTime: 0.2

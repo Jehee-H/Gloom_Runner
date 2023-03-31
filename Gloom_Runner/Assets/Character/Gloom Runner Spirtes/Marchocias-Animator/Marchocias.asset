@@ -15,9 +15,9 @@ MonoBehaviour:
   name: Marchocias
   id: 2
   description: Big
-  speedValue: 3
-  jumpValue: 8
-  dashingVelocity: 15
-  dashingTime: 0.1
+  speedValue: 4
+  jumpValue: 0
+  dashingVelocity: 14
+  dashingTime: 0.13
   yDashingVelocity: 0
   optimizeYVelocity: 2
