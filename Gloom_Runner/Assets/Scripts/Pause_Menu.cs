@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Pause_Menu : MonoBehaviour
 {
     private Platformer.UI.MetaGameController metaGameController;
-
+    public GameObject musicGameobject;
     private void Start()
     {
         metaGameController = GameObject.Find("Pause Menu").GetComponent<Platformer.UI.MetaGameController>();
@@ -24,6 +24,13 @@ public class Pause_Menu : MonoBehaviour
 
     public void Quit()
     {
+        destroyMusicBox();
         SceneManager.LoadScene(0);
+    }
+
+    public void destroyMusicBox()
+    {
+        Destroy(GameObject.Find("MusicObject"));
+
     }
 }
