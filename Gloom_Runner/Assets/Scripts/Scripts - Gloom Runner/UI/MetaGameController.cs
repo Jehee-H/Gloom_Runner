@@ -79,7 +79,7 @@ namespace Platformer.UI
         /// <param name="show"></param>
         public void ToggleMainMenu(bool show)
         {
-            if (this.showMainCanvas != show && this.showVictoryCanvas == false)
+            if (this.showMainCanvas != show && this.showVictoryCanvas == false && showDefeatCanvas == false)
             {
                 _ToggleMainMenu(show);
             }
