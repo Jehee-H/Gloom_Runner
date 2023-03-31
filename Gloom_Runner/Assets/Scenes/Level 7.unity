@@ -586,19 +586,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicGameobject: {fileID: 0}
---- !u!114 &164917150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 164917148}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f54f8d3ea9652734b93a77259e323e7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicGameobject: {fileID: 0}
 --- !u!114 &164917151 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4009130065698333724, guid: 9a1bd12ebb35d4dc997aa0c5494eda9b,
@@ -1819,7 +1806,7 @@ PrefabInstance:
     - target: {fileID: 8380274319731649656, guid: 9a1bd12ebb35d4dc997aa0c5494eda9b,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Continue
+      value: Quit
       objectReference: {fileID: 0}
     - target: {fileID: 8380274319731649656, guid: 9a1bd12ebb35d4dc997aa0c5494eda9b,
         type: 3}
@@ -3332,16 +3319,16 @@ EdgeCollider2D:
   - {x: -52.05806, y: 24.028687}
   - {x: -51.99477, y: 32.027386}
   - {x: -36.09734, y: 31.950241}
-  - {x: -35.976555, y: -15.977465}
-  - {x: -31.96613, y: -16.01463}
+  - {x: -36.485218, y: -14.26072}
+  - {x: -32.284042, y: -14.361466}
   - {x: -31.990576, y: -5.9702163}
   - {x: 36.014214, y: -5.950896}
   - {x: 36.0243, y: -1.9537563}
   - {x: -32.0188, y: -2.0049415}
   - {x: -32.04791, y: 31.940659}
   - {x: 52.045486, y: 32.231316}
-  - {x: 51.926655, y: 26.16802}
-  - {x: -9.999459, y: 26.019058}
+  - {x: 52.000946, y: 24.310987}
+  - {x: -10.148018, y: 24.459146}
   - {x: -10.045469, y: 22.008593}
   - {x: 51.949306, y: 22.08342}
   - {x: 52.023026, y: 5.9006925}
@@ -3372,8 +3359,8 @@ EdgeCollider2D:
   - {x: -52.099518, y: -19.976995}
   - {x: -52.115402, y: 20.027025}
   - {x: -47.95282, y: 19.994791}
-  - {x: -48.092297, y: -15.885295}
-  - {x: -44.06411, y: -15.91283}
+  - {x: -48.15588, y: -14.295714}
+  - {x: -44.191277, y: -14.386834}
   - {x: -44.003338, y: -10.823682}
   - {x: -43.969265, y: -8.803238}
   - {x: -44.01588, y: 20.021032}

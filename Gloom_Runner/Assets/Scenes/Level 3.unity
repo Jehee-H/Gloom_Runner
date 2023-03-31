@@ -526,19 +526,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicGameobject: {fileID: 0}
---- !u!114 &173010675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 173010673}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f54f8d3ea9652734b93a77259e323e7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicGameobject: {fileID: 0}
 --- !u!114 &173010676 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4009130065698333724, guid: 9a1bd12ebb35d4dc997aa0c5494eda9b,
@@ -1301,12 +1288,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 2202520165731210269, guid: d9dce77ae7fe9134693ec228aff9ecb4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d9dce77ae7fe9134693ec228aff9ecb4, type: 3}
---- !u!1 &357770293 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3657217531393788839, guid: 60ac118b0e444a243a9f27b59538a069,
-    type: 3}
-  m_PrefabInstance: {fileID: 1538293689}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &500566886 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4815076385119181263, guid: 4d07aee98c9d90343a45d3bfd4ad8c41,
@@ -2603,6 +2584,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60ac118b0e444a243a9f27b59538a069, type: 3}
+--- !u!1 &1538293690 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7738721634227194283, guid: 60ac118b0e444a243a9f27b59538a069,
+    type: 3}
+  m_PrefabInstance: {fileID: 1538293689}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1598051802
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2740,7 +2727,7 @@ EdgeCollider2D:
   - {x: 51.83049, y: 32.087986}
   - {x: 52.016804, y: 23.938093}
   - {x: 38.06418, y: 23.981232}
-  - {x: 38.021267, y: 20.059723}
+  - {x: 38.943893, y: 20.38264}
   - {x: 52.06267, y: 20.014448}
   - {x: 51.90631, y: -13.999867}
   - {x: 52.142365, y: -15.429219}
@@ -3077,8 +3064,8 @@ EdgeCollider2D:
   - {x: 14.080108, y: 11.940217}
   - {x: 15.974773, y: 8.011095}
   - {x: 34.017002, y: 3.9097004}
-  - {x: 35.957638, y: 12.073581}
-  - {x: 33.971264, y: 19.954844}
+  - {x: 35.03502, y: 12.027449}
+  - {x: 33.27929, y: 20.09324}
   - {x: 26.128412, y: 20.025871}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
@@ -3288,7 +3275,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1754240609
 MonoBehaviour:
@@ -3319,7 +3306,7 @@ MonoBehaviour:
   mainMenu: {fileID: 2110646551}
   Nul: {fileID: 1377287558}
   Peng: {fileID: 50379170}
-  Mas: {fileID: 357770293}
+  Mas: {fileID: 1538293690}
   vcam: {fileID: 1946717926}
   victoryMenu: {fileID: 613675877}
   defeatMenu: {fileID: 173010676}

@@ -1706,7 +1706,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 60ac118b0e444a243a9f27b59538a069, type: 3}
 --- !u!1 &899172434 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 3657217531393788839, guid: 60ac118b0e444a243a9f27b59538a069,
+  m_CorrespondingSourceObject: {fileID: 7738721634227194283, guid: 60ac118b0e444a243a9f27b59538a069,
     type: 3}
   m_PrefabInstance: {fileID: 899172433}
   m_PrefabAsset: {fileID: 0}
@@ -3328,7 +3328,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1754240609
 MonoBehaviour:
@@ -3940,19 +3940,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8ca3ff99518d1e0469ccdcba309f5219, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicGameobject: {fileID: 0}
---- !u!114 &2136697679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2136697677}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f54f8d3ea9652734b93a77259e323e7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   musicGameobject: {fileID: 0}

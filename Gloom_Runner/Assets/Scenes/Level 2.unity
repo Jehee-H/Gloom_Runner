@@ -1251,19 +1251,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicGameobject: {fileID: 1524920318}
---- !u!114 &821499194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 821499192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f54f8d3ea9652734b93a77259e323e7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicGameobject: {fileID: 0}
 --- !u!114 &821499195 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4009130065698333724, guid: 9a1bd12ebb35d4dc997aa0c5494eda9b,
@@ -1427,8 +1414,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7738721634227194282, guid: 60ac118b0e444a243a9f27b59538a069,
+        type: 3}
+      propertyPath: gameController
+      value: 
+      objectReference: {fileID: 1754240606}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60ac118b0e444a243a9f27b59538a069, type: 3}
+--- !u!1 &847815094 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7738721634227194283, guid: 60ac118b0e444a243a9f27b59538a069,
+    type: 3}
+  m_PrefabInstance: {fileID: 847815093}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &898268322
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1700,11 +1698,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d07aee98c9d90343a45d3bfd4ad8c41, type: 3}
---- !u!1 &1238519483 stripped
+--- !u!1 &1232336412 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 3657217531393788839, guid: 60ac118b0e444a243a9f27b59538a069,
+  m_CorrespondingSourceObject: {fileID: 4815076385119181263, guid: 4d07aee98c9d90343a45d3bfd4ad8c41,
     type: 3}
-  m_PrefabInstance: {fileID: 847815093}
+  m_PrefabInstance: {fileID: 1232336411}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1340959628
 PrefabInstance:
@@ -2049,7 +2047,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textScore: {fileID: 1340959632}
   score: 0
-  ui: {fileID: 0}
+  ui: {fileID: 1232336412}
 --- !u!1001 &1397933388
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2419,6 +2417,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 758091418582519466, guid: bdb120f25b37f74459a24895363e8441,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.169
       objectReference: {fileID: 0}
     - target: {fileID: 758091418582519466, guid: bdb120f25b37f74459a24895363e8441,
         type: 3}
@@ -2954,7 +2957,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1754240609
 MonoBehaviour:
@@ -2985,7 +2988,7 @@ MonoBehaviour:
   mainMenu: {fileID: 680436914}
   Nul: {fileID: 342162977}
   Peng: {fileID: 1837453930}
-  Mas: {fileID: 1238519483}
+  Mas: {fileID: 847815094}
   vcam: {fileID: 1946717924}
   victoryMenu: {fileID: 1340959630}
   defeatMenu: {fileID: 821499195}
